@@ -26,6 +26,7 @@
 </head>
 
 <body>
+
     <div class="flex-container">
         <div>
             <button type="button" class="btn btn-primary btn-lg" id="openLinksButton1">Part I</button>
@@ -58,7 +59,12 @@
             <button type="button" class="btn btn-info btn-lg" id="openLinksButton10">Part X</button>
         </div>
     </div>
+    <div class="flex-container">
+        <div>
+            <button type="button" class="btn btn-primary btn-lg" id="openWorksheet">Work Sheets</button>
+        </div>
 
+    </div>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
@@ -68,6 +74,10 @@
 
 
     <script>
+        const worksheetLinks = [
+            "https://docs.google.com/spreadsheets/d/1_sUeJxjkRx1Ryv8795amofNF8d0EEDXK4lxem7JfAyU/edit#gid=0",
+            "https://budilki.ru/timer/#countdown=00:35:00&enabled=0&seconds=0&sound=flute&loop=1"
+        ]
         const links1 = [
             "https://stepchess.ru/course/65/task/447/puzzle/1082",
             "https://stepchess.ru/course/65/task/447/puzzle/4986",
@@ -121,6 +131,7 @@
                 });
             }
         }
+        const openWorksheet = document.getElementById("openWorksheet");
         const openLinksButton1 = document.getElementById("openLinksButton1");
         const openLinksButton2 = document.getElementById("openLinksButton2");
         const openLinksButton3 = document.getElementById("openLinksButton3");
@@ -131,6 +142,10 @@
         const openLinksButton8 = document.getElementById("openLinksButton8");
         const openLinksButton9 = document.getElementById("openLinksButton9");
         const openLinksButton10 = document.getElementById("openLinksButton10");
+
+        openWorksheet.addEventListener("click", function () {
+            openLinks(worksheetLinks)
+        });
 
         openLinksButton1.addEventListener("click", function () {
             openLinks(links1)
