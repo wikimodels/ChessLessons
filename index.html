@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+
+<link>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+</link>
+<title>Chess Lessons</title>
+<style>
+    .flex-container {
+        width: 90%;
+        height: 150px;
+        margin: 3em;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+</style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div>
+            <button type="button" class="btn btn-primary btn-lg" id="openLinksButton1">Part I</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-success btn-lg" id="openLinksButton2">Part II</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-danger btn-lg" id="openLinksButton3">Part III</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-warning btn-lg" id="openLinksButton4">Part IV</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-info btn-lg" id="openLinksButton5">Part V</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-primary btn-lg" id="openLinksButton6">Part VI</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-success btn-lg" id="openLinksButton7">Part VII</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-danger btn-lg" id="openLinksButton8">Part VIII</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-warning btn-lg" id="openLinksButton9">Part IX</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-info btn-lg" id="openLinksButton10">Part X</button>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+    <script>
+        const links1 = [
+            "https://stepchess.ru/course/65/task/447/puzzle/1082",
+            "https://stepchess.ru/course/65/task/447/puzzle/4986",
+            "https://stepchess.ru/course/65/task/447/puzzle/4987",
+            "https://stepchess.ru/course/65/task/447/puzzle/1091",
+            "https://stepchess.ru/course/65/task/447/puzzle/1101",
+            "https://stepchess.ru/course/65/task/447/puzzle/1098",
+            "https://stepchess.ru/course/65/task/447/puzzle/1099",
+        ];
+        const links2 = [
+            "https://stepchess.ru/course/65/task/447/puzzle/1110",
+            "https://stepchess.ru/course/65/task/447/puzzle/1117",
+            "https://stepchess.ru/course/65/task/447/puzzle/1120",
+            "https://stepchess.ru/course/65/task/447/puzzle/1125",
+            "https://stepchess.ru/course/65/task/447/puzzle/1128",
+            "https://stepchess.ru/course/65/task/447/puzzle/4963",
+            "https://stepchess.ru/course/65/task/447/puzzle/1145",
+        ];
+        const links3 = [
+            "https://stepchess.ru/course/65/task/447/puzzle/1145",
+            "https://stepchess.ru/course/65/task/447/puzzle/1161",
+            "https://stepchess.ru/course/65/task/447/puzzle/4867",
+            "https://stepchess.ru/course/65/task/447/puzzle/4877",
+            "https://stepchess.ru/course/65/task/447/puzzle/4890",
+            "https://stepchess.ru/course/65/task/447/puzzle/4884",
+            "https://stepchess.ru/course/65/task/447/puzzle/4965",
+        ];
+        const links4 = [
+            "https://stepchess.ru/course/65/task/447/puzzle/4892",
+            "https://stepchess.ru/course/65/task/447/puzzle/4978",
+            "https://stepchess.ru/course/65/task/447/puzzle/4904",
+            "https://stepchess.ru/course/65/task/447/puzzle/1141",
+            "https://stepchess.ru/course/65/task/447/puzzle/4924",
+            "https://stepchess.ru/course/65/task/447/puzzle/4896",
+        ];
+        const links5 = []
+        const links6 = []
+        const links7 = []
+        const links8 = []
+        const links9 = []
+        const links10 = []
+
+
+        function openLinks(links) {
+            {
+                links.forEach((link, index) => {
+                    setTimeout(() => {
+                        window.open(link, '_blank');
+                    }, index * 100);
+
+                });
+            }
+        }
+        const openLinksButton1 = document.getElementById("openLinksButton1");
+        const openLinksButton2 = document.getElementById("openLinksButton2");
+        const openLinksButton3 = document.getElementById("openLinksButton3");
+        const openLinksButton4 = document.getElementById("openLinksButton4");
+        const openLinksButton5 = document.getElementById("openLinksButton5");
+        const openLinksButton6 = document.getElementById("openLinksButton6");
+        const openLinksButton7 = document.getElementById("openLinksButton7");
+        const openLinksButton8 = document.getElementById("openLinksButton8");
+        const openLinksButton9 = document.getElementById("openLinksButton9");
+        const openLinksButton10 = document.getElementById("openLinksButton10");
+
+        openLinksButton1.addEventListener("click", function () {
+            openLinks(links1)
+        });
+        openLinksButton2.addEventListener("click", function () {
+            openLinks(links2)
+        });
+        openLinksButton3.addEventListener("click", function () {
+            openLinks(links3)
+        });
+        openLinksButton4.addEventListener("click", function () {
+            openLinks(links4)
+        });
+        openLinksButton5.addEventListener("click", function () {
+            openLinks(links5)
+        });
+        openLinksButton6.addEventListener("click", function () {
+            openLinks(links6)
+        });
+        openLinksButton7.addEventListener("click", function () {
+            openLinks(links7)
+        });
+        openLinksButton8.addEventListener("click", function () {
+            openLinks(links8)
+        });
+        openLinksButton9.addEventListener("click", function () {
+            openLinks(links9)
+        });
+        openLinksButton10.addEventListener("click", function () {
+            openLinks(links10)
+        });
+    </script>
+</body>
+
+
+</html>
