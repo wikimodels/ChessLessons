@@ -28,37 +28,72 @@
 <body>
 
     <div class="flex-container">
-        <div>
-            <button type="button" class="btn btn-primary btn-lg" id="openLinksButton1">Part I</button>
-        </div>
-        <div>
-            <button type="button" class="btn btn-success btn-lg" id="openLinksButton2">Part II</button>
-        </div>
-        <div>
-            <button type="button" class="btn btn-danger btn-lg" id="openLinksButton3">Part III</button>
-        </div>
-        <div>
-            <button type="button" class="btn btn-warning btn-lg" id="openLinksButton4">Part IV</button>
-        </div>
-        <div>
-            <button type="button" class="btn btn-info btn-lg" id="openLinksButton5">Part V</button>
-        </div>
-        <div>
-            <button type="button" class="btn btn-primary btn-lg" id="openLinksButton6">Part VI</button>
-        </div>
-        <div>
-            <button type="button" class="btn btn-success btn-lg" id="openLinksButton7">Part VII</button>
-        </div>
-        <div>
-            <button type="button" class="btn btn-danger btn-lg" id="openLinksButton8">Part VIII</button>
-        </div>
-        <div>
-            <button type="button" class="btn btn-warning btn-lg" id="openLinksButton9">Part IX</button>
-        </div>
-        <div>
-            <button type="button" class="btn btn-info btn-lg" id="openLinksButton10">Part X</button>
-        </div>
+        <ul class="nav nav-pills mb-3" id="ex1" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="ex1-tab-1" data-bs-toggle="tab" href="#ex1-tabs-1" role="tab"
+                    aria-controls="ex1-tabs-1" aria-selected="true">Tab 1</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="ex1-tab-2" data-bs-toggle="tab" href="#ex1-tabs-2" role="tab"
+                    aria-controls="ex1-tabs-2" aria-selected="false">Tab 2</a>
+            </li>
+        </ul>
     </div>
+
+    <div class="tab-content" id="ex1-content">
+        <div class="tab-pane fade show active" id="ex1-tabs-1" role="tabpanel" aria-labelledby="ex1-tab-1">
+            <div class="flex-container">
+                <div>
+                    <button type="button" class="btn btn-primary btn-lg" id="openLinksButton1">Part I</button>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-success btn-lg" id="openLinksButton2">Part II</button>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-danger btn-lg" id="openLinksButton3">Part III</button>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-warning btn-lg" id="openLinksButton4">Part IV</button>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-info btn-lg" id="openLinksButton5">Part V</button>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-primary btn-lg" id="openLinksButton6">Part VI</button>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-success btn-lg" id="openLinksButton7">Part VII</button>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="ex1-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
+            <div class="flex-container">
+                <div>
+                    <button type="button" class="btn btn-success btn-lg" id="openLinksButton2_1">Part I</button>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-danger btn-lg" id="openLinksButton2_2">Part II</button>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-primary btn-lg" id="openLinksButton2_3">Part III</button>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-info btn-lg" id="openLinksButton2_4">Part IV</button>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-warning btn-lg" id="openLinksButton2_5">Part V</button>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-primary btn-lg" id="openLinksButton2_6">Part VI</button>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-success btn-lg" id="openLinksButton2_7">Part VII</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
     <div class="flex-container">
         <div>
             <button type="button" class="btn btn-primary btn-lg" id="openWorksheet">Work Sheets</button>
@@ -148,10 +183,22 @@
             "https://stepchess.ru/course/65/task/447/puzzle/4986",
             "https://stepchess.ru/course/65/task/447/puzzle/4987",
         ]
-        const links8 = []
-        const links9 = []
-        const links10 = []
-
+        const links2_1 = [
+            "https://stepchess.ru/course/65/task/877/puzzle/1149",
+            "https://stepchess.ru/course/65/task/877/puzzle/1156",
+            "https://stepchess.ru/course/65/task/877/puzzle/4909",
+            "https://stepchess.ru/course/65/task/877/puzzle/5008",
+            "https://stepchess.ru/course/65/task/877/puzzle/5041",
+            "https://stepchess.ru/course/65/task/877/puzzle/5042",
+            "https://stepchess.ru/course/65/task/877/puzzle/1026",
+            "https://stepchess.ru/course/65/task/877/puzzle/1092",
+        ]
+        const links2_2 = []
+        const links2_3 = []
+        const links2_4 = []
+        const links2_5 = []
+        const links2_6 = []
+        const links2_7 = []
 
         function openLinks(links) {
             {
@@ -171,9 +218,15 @@
         const openLinksButton5 = document.getElementById("openLinksButton5");
         const openLinksButton6 = document.getElementById("openLinksButton6");
         const openLinksButton7 = document.getElementById("openLinksButton7");
-        const openLinksButton8 = document.getElementById("openLinksButton8");
-        const openLinksButton9 = document.getElementById("openLinksButton9");
-        const openLinksButton10 = document.getElementById("openLinksButton10");
+
+        const openLinksButton2_1 = document.getElementById("openLinksButton2_1");
+        const openLinksButton2_2 = document.getElementById("openLinksButton2_2");
+        const openLinksButton2_3 = document.getElementById("openLinksButton2_3");
+        const openLinksButton2_4 = document.getElementById("openLinksButton2_4");
+        const openLinksButton2_5 = document.getElementById("openLinksButton2_5");
+        const openLinksButton2_6 = document.getElementById("openLinksButton2_6");
+        const openLinksButton2_7 = document.getElementById("openLinksButton2_7");
+
 
         openWorksheet.addEventListener("click", function () {
             openLinks(worksheetLinks)
@@ -200,15 +253,29 @@
         openLinksButton7.addEventListener("click", function () {
             openLinks(links7)
         });
-        openLinksButton8.addEventListener("click", function () {
-            openLinks(links8)
+
+        openLinksButton2_1.addEventListener("click", function () {
+            openLinks(links2_1)
         });
-        openLinksButton9.addEventListener("click", function () {
-            openLinks(links9)
+        openLinksButton2_2.addEventListener("click", function () {
+            openLinks(links2_2)
         });
-        openLinksButton10.addEventListener("click", function () {
-            openLinks(links10)
+        openLinksButton2_3.addEventListener("click", function () {
+            openLinks(links2_3)
         });
+        openLinksButton2_4.addEventListener("click", function () {
+            openLinks(links2_4)
+        });
+        openLinksButton2_5.addEventListener("click", function () {
+            openLinks(links2_5)
+        });
+        openLinksButton2_6.addEventListener("click", function () {
+            openLinks(links2_6)
+        });
+        openLinksButton2_7.addEventListener("click", function () {
+            openLinks(links2_7)
+        });
+
     </script>
 </body>
 
